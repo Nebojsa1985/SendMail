@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Mail</title>
+
+ 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  
+<div>
+  
+  <div id="saves"></div>
+  <br>
+  <button onclick="createItem()">Snimi u local storage</button>
+  <input id="nazivPripreme" type="text" placeholder="Upiši naziv..."> 
+  <button onclick="deleteItem()">Obrisi iz local storage</button>
+  
+</div>
+
+<div class="mailAdrese">
+  <div class="mailAdreseRed">
+  <p>TO:&nbsp;&nbsp;</p>
+  <p id="mailoviTO"></p>
+  </div> 
+  <div class="mailAdreseRed"> 
+  <p>CC:&nbsp;&nbsp;</p>
+  <p id="mailoviCC"></p>
+  </div>
+  <div class="mailAdreseRed">
+  <p>BCC:&nbsp;&nbsp;</p>
+  <p id="mailoviBCC"></p>
+  </div>
+ </div>
+<div>
+  <input type="email" id="emailTO" name="emailTO">
+  <button onclick="dodajTO()">Dodaj u TO</button>
+  <br>
+  <input type="email" id="emailCC" name="emailCC">
+  <button onclick="dodajCC()">Dodaj u CC</button>
+  <br>
+  <input type="email" id="emailBCC" name="emailBCC">
+  <button onclick="dodajBCC()">Dodaj u BCC</button>
+  <br>
+  <form id="subForm">
+      <label">Subject maila:</label>
+      <input type="text" id="subject" value="wd."><br>
+      <label">Tekst maila:</label><br>
+      <textarea id="tekst" value=""></textarea>
+      <p><small>*Kada se pritisne enter u tekstu mail-a upisuje se "%0D%0A" što je 1 red razmaka</small></p>
+  </form>
+</div>
+
+  <a id="mail" href="mailto:jnesa85@gmail.com?cc=marijana@gmail.com;&bcc=jnesa85@gmail.com;&subject=Dnevni izvestaj&body=U prilogu je dnevni izvestaj." target="_top">Pošalji mail</a>
+
+
+
+</body>
+</html>
