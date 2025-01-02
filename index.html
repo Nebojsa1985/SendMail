@@ -11,51 +11,65 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-  
-<div>
-  
-  <div id="saves"></div>
-  <br>
-  <button onclick="createItem()">Snimi u local storage</button>
-  <input id="nazivPripreme" type="text" placeholder="Upiši naziv..."> 
-  <button onclick="deleteItem()">Obrisi iz local storage</button>
-  
+
+  <div class="ctrls">
+    <h1>Send Mail App</h1>
+    <p id="info">Save your email set in your device local storage and use them anytime</p>
+    <div class="author-button">
+      <a href="https://nebojsajovanovic.netlify.app/" target="_blank">
+        ©️
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+<h4 class="address-div-heading">Enter email adrress here and add them in seting</h4>
+<div class="address-div">
+  <input class="address-inputs" type="email" id="emailTO" name="emailTO" placeholder="To...">
+  <button class="add-btns" onclick="dodajTO()" >Add Email To</button>
+  <input class="address-inputs" type="email" id="emailCC" name="emailCC " placeholder="Cc...">
+  <button class="add-btns" onclick="dodajCC()">Add Email Cc</button>
+  <input class="address-inputs" type="email" id="emailBCC" name="emailBCC" placeholder="Bcc...">
+  <button class="add-btns" onclick="dodajBCC()">Add Email Bcc</button>
+
 </div>
 
-<div class="mailAdrese">
-  <div class="mailAdreseRed">
-  <p>TO:&nbsp;&nbsp;</p>
-  <p id="mailoviTO"></p>
-  </div> 
-  <div class="mailAdreseRed"> 
-  <p>CC:&nbsp;&nbsp;</p>
-  <p id="mailoviCC"></p>
-  </div>
-  <div class="mailAdreseRed">
-  <p>BCC:&nbsp;&nbsp;</p>
-  <p id="mailoviBCC"></p>
-  </div>
- </div>
-<div>
-  <input type="email" id="emailTO" name="emailTO">
-  <button onclick="dodajTO()">Dodaj u TO</button>
-  <br>
-  <input type="email" id="emailCC" name="emailCC">
-  <button onclick="dodajCC()">Dodaj u CC</button>
-  <br>
-  <input type="email" id="emailBCC" name="emailBCC">
-  <button onclick="dodajBCC()">Dodaj u BCC</button>
-  <br>
+<div class="email-seting">
+  <h3>Email seting</h3>
+  <div class="mailAdrese">
+    <div class="mailAdreseRed">
+    <p>To:&nbsp;&nbsp;</p>
+    <p id="mailoviTO"></p>
+    </div> 
+    <div class="mailAdreseRed"> 
+    <p>Cc:&nbsp;&nbsp;</p>
+    <p id="mailoviCC"></p>
+    </div>
+    <div class="mailAdreseRed">
+    <p>Bcc:&nbsp;&nbsp;</p>
+    <p id="mailoviBCC"></p>
+    </div>
+   </div>
   <form id="subForm">
-      <label">Subject maila:</label>
+      <label">Email subject:</label>
       <input type="text" id="subject" value="wd."><br>
-      <label">Tekst maila:</label><br>
+      <label">Email text:</label><br>
       <textarea id="tekst" value=""></textarea>
-      <p><small>*Kada se pritisne enter u tekstu mail-a upisuje se "%0D%0A" što je 1 red razmaka</small></p>
+      <p><small>*when you press enter, "%0D%0A" is written in the text of the mail, which is 1 line of space</small></p>
   </form>
+  <button onclick="isprazniPolja()">Clear all fields and enter new</button>
 </div>
 
-  <a id="mail" href="mailto:jnesa85@gmail.com?cc=marijana@gmail.com;&bcc=jnesa85@gmail.com;&subject=Dnevni izvestaj&body=U prilogu je dnevni izvestaj." target="_top">Pošalji mail</a>
+<div class="localstorage-ctrl">  <br>
+  <input id="nazivPripreme" type="text" placeholder="Formated mail save name..."> 
+  <button onclick="createItem()">Save</button>
+  <button onclick="deleteItem()">Delete</button>  
+</div>
+<div id="saves"></div>
+  <a class="send-btn" id="mail" href="mailto:jnesa85@gmail.com?cc=marijana@gmail.com;&bcc=jnesa85@gmail.com;&subject=Dnevni izvestaj&body=U prilogu je dnevni izvestaj." target="_top">Send email</a>
 
 
 
