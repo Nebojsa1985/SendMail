@@ -209,6 +209,8 @@ a:hover {
     font-weight: small;
     width: 100vw;
     padding-left: 14px;
+    height: 40px;
+    font-size: 13px;
   }
   .email-seting {
     margin: 8px;
@@ -246,19 +248,27 @@ a:hover {
     display: none;
   }
 
+  .mailAdrese {
+    padding: 4px;
+  }
+
   .address-div {
     width: 90vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3px 7px;
+    margin-top: 38px;
   }
+
   .address-div-heading {
-    font-size: small;
-    margin-bottom: 5px;
+    display: none;
   }
   .address-inputs {
     width: 100%;
     margin: 0px;
+  }
+  textarea {
+    height: 80px;
   }
   .add-btns {
     width: 100%;
@@ -266,6 +276,17 @@ a:hover {
   }
   a {
     width: 90vw;
+    height: 40px;
+    font-size: 20px;
+  }
+  .author-button > a {
+    text-decoration: none;
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    height: 10px;
+    width: 10px;
+    font-size: large;
   }
 }
 
