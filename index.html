@@ -21,14 +21,14 @@
       </a>
     </div>
   </div>
-<h4 class="address-div-heading">Enter email adrress here and add them in seting</h4>
+<h4 class="address-div-heading">Enter email adrress here and add them in setting</h4>
 <div class="address-div">
   <input class="address-inputs" type="email" id="emailTO" name="emailTO" placeholder="To...">
-  <button class="add-btns" onclick="dodajTO()" >Add Email To</button>
+  <button class="add-btns" onclick="dodajTO()" >Add To</button>
   <input class="address-inputs" type="email" id="emailCC" name="emailCC " placeholder="Cc...">
-  <button class="add-btns" onclick="dodajCC()">Add Email Cc</button>
+  <button class="add-btns" onclick="dodajCC()">Add Cc</button>
   <input class="address-inputs" type="email" id="emailBCC" name="emailBCC" placeholder="Bcc...">
-  <button class="add-btns" onclick="dodajBCC()">Add Email Bcc</button>
+  <button class="add-btns" onclick="dodajBCC()">Add Bcc</button>
 
 </div>
 
@@ -36,15 +36,15 @@
   <h3>Email setting</h3>
   <div class="mailAdrese">
     <div class="mailAdreseRed">
-    <p>To:&nbsp;&nbsp;</p>
+    <p>To:&nbsp;</p>
     <p id="mailoviTO"></p>
     </div> 
     <div class="mailAdreseRed"> 
-    <p>Cc:&nbsp;&nbsp;</p>
+    <p>Cc:&nbsp;</p>
     <p id="mailoviCC"></p>
     </div>
     <div class="mailAdreseRed">
-    <p>Bcc:&nbsp;&nbsp;</p>
+    <p>Bcc:&nbsp;</p>
     <p id="mailoviBCC"></p>
     </div>
    </div>
@@ -53,7 +53,7 @@
       <input type="text" id="subject" value="wd."><br>
       <label">Email text:</label><br>
       <textarea id="tekst" value=""></textarea>
-      <p><small>*when you press enter, "%0D%0A" is written in the text of the mail, which is 1 line of space</small></p>
+      <p class="textarea-info"><small >*when you press enter, "%0D%0A" is written, which is 1 line of space - new row</small></p>
   </form>
   <button onclick="isprazniPolja()">Clear all fields and enter new</button>
 </div>

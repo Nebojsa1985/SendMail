@@ -215,6 +215,11 @@ a:hover {
   .email-seting {
     margin: 8px;
   }
+
+  .mailAdreseRed {
+    font-size: 12px;
+  }
+
   .localstorage-ctrl {
     gap: 2px;
     width: 100vw;
@@ -222,10 +227,11 @@ a:hover {
   }
   .localstorage-ctrl > input {
     width: 200px;
+    height: 30px;
   }
   .localstorage-ctrl > button {
     width: 60px;
-    height: 32px;
+    height: 30px;
   }
 
   #saves {
@@ -257,18 +263,28 @@ a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3px 7px;
-    margin-top: 38px;
+    margin-top: 8px;
   }
 
   .address-div-heading {
     display: none;
   }
   .address-inputs {
+    width: 250px;
+    height: 28px;
+    margin: 0px;
+    font-size: 14px;
+  }
+  .add-btns {
     width: 100%;
+    height: 28px;
     margin: 0px;
   }
   textarea {
     height: 80px;
+  }
+  .textarea-info {
+    font-size: 11px;
   }
   .add-btns {
     width: 100%;
