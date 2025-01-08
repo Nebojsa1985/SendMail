@@ -374,7 +374,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1434px) and (min-width: 921px) {
+@media screen and (max-width: 1540px) and (min-width: 921px) {
   .ctrls {
     height: 30px;
     font-size: 10px;
@@ -401,6 +401,7 @@ a:hover {
   }
   .localstorage-ctrl {
     margin-bottom: 1px;
+    margin-top: 20px;
   }
   #saves {
     margin: 1px;
@@ -422,10 +423,10 @@ a:hover {
   .author-button > a {
     text-decoration: none;
     position: fixed;
-    top: 10px;
+    top: 5px;
     right: 35px;
     height: 10px;
     width: 10px;
-    font-size: large;
+    font-size: x-large;
   }
 }
